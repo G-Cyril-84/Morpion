@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body {
+    background-image: url('pics/Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pacifico', cursive;
+    font-weight: bolder;
+    font-size: 1.7rem;
+}
+#panneau {
+    background-image: url('pics/Panneau.png');
+    background-repeat: no-repeat;
+    height: 134px;
+    width: 648px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#panneau p {
+    color:#FFF;
+    text-shadow: 2px 2px 5px #000;
+    text-align: center;
+}
+#plateau {
+    background-image: url('pics/Grille.png');
+    background-repeat: no-repeat;
+    width: 648px;
+    height: 648px;
+    display: grid;
+    grid-template-columns: 35px 159px 52px 159px 52px 159px 32px;
+    grid-template-rows: 38px 158px 52px 159px 52px 159px 30px;
+    grid-template-areas:
+    "a1 a2 a3 a4 a5 a6 a7"
+    "b1 b2 b3 b4 b5 b6 b7"
+    "c1 c2 c3 c4 c5 c6 c7"
+    "d1 d2 d3 d4 d5 d6 d7"
+    "e1 e2 e3 e4 e5 e6 e7"
+    "f1 f2 f3 f4 f5 f6 f7"
+    "g1 g2 g3 g4 g5 g6 g7";
+}
+#replay {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: medium;
+}
+#b2, #b4, #b6, #d2, #d4, #d6, #f2, #f4, #f6 {
+    cursor: pointer;
+    background-size: cover;
+}
+#a1 {grid-area: a1}
+#a2 {grid-area: a2}
+#a3 {grid-area: a3}
+#a4 {grid-area: a4}
+#a5 {grid-area: a5}
+#a6 {grid-area: a6}
+#a7 {grid-area: a7}
+#b1 {grid-area: b1}
+#b3 {grid-area: b3}
+#b5 {grid-area: b5}
+#b7 {grid-area: b7}
+#c1 {grid-area: c1}
+#c2 {grid-area: c2}
+#c3 {grid-area: c3}
+#c4 {grid-area: c4}
+#c5 {grid-area: c5}
+#c6 {grid-area: c6}
+#c7 {grid-area: c7}
+#d1 {grid-area: d1}
+#d3 {grid-area: d3}
+#d5 {grid-area: d5}
+#d7 {grid-area: d7}
+#e1 {grid-area: e1}
+#e2 {grid-area: e2}
+#e3 {grid-area: e3}
+#e4 {grid-area: e4}
+#e5 {grid-area: e5}
+#e6 {grid-area: e6}
+#e7 {grid-area: e7}
+#f1 {grid-area: f1}
+#f3 {grid-area: f3}
+#f5 {grid-area: f5}
+#f7 {grid-area: f7}
+#g1 {grid-area: g1}
+#g2 {grid-area: g2}
+#g3 {grid-area: g3}
+#g4 {grid-area: g4}
+#g5 {grid-area: g5}
+#g6 {grid-area: g6}
+#g7 {grid-area: g7}
+
+#b2 {grid-area: b2}
+#b4 {grid-area: b4}
+#b6 {grid-area: b6}
+#d2 {grid-area: d2}
+#d4 {grid-area: d4}
+#d6 {grid-area: d6}
+#f2 {grid-area: f2}
+#f4 {grid-area: f4}
+#f6 {grid-area: f6}
+
+@media only screen and (max-width: 750px) {
+    body {
+        font-size: 1.4rem;
+    }
+    #panneau {
+        height: 134px;
+        width: 486px;
+    }
+    #plateau {
+        background-size: cover;
+        width: 486px;
+        height: 486px;
+        grid-template-columns: 26px 119px 39px 120px 39px 119px 24px;
+        grid-template-rows: 28px 119px 39px 120px 39px 119px 22px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        font-size: 1.2rem;
+    }
+    #panneau {
+        height: 134px;
+        width: 324px;
+    }
+    #plateau {
+        background-size: cover;
+        width: 324px;
+        height: 324px;
+        grid-template-columns: 18px 79px 26px 80px 26px 79px 16px;
+        grid-template-rows: 19px 79px 26px 80px 26px 79px 15px;
+    }
+}
